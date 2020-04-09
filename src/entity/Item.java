@@ -31,6 +31,7 @@ public class Item {
         this.imageUrl = builder.imageUrl;
         this.url = builder.url;
         this.distance = builder.distance;
+
     }
 
 

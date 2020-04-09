@@ -68,6 +68,9 @@ public class MySQLTableCreation {
                     + "PRIMARY KEY (user_id))";
             stmt.executeUpdate(sql);
 
+            sql = "INSERT INTO users (user_id, password, first_name, last_name) VALUES ('1111','1234', 'Zhicheng', 'Qian')";
+            stmt.executeUpdate(sql);
+
             sql = "CREATE TABLE history ("
                     + "user_id VARCHAR(255) NOT NULL,"
                     + "item_id VARCHAR(255) NOT NULL,"

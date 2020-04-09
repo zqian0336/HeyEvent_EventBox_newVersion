@@ -22,15 +22,18 @@
         })
             .then(function(response){
 
-                lat = response.data.results[0].geometry.location.lat;
-                lng = response.data.results[0].geometry.location.lng;
-                // var array = response.data.results[0];
-                // if(!array || array.length == 0) {
-                //     showWarningMessage('No nearby item.');
-                // }else{
-                //     lat = array.geometry.location.lat;
-                //     lng = array.geometry.location.lng;
-                // }
+                // lat = response.data.results[0].geometry.location.lat;
+                // lng = response.data.results[0].geometry.location.lng;
+                var array = response.data.results[0];
+                if(!array || array.length == 0) {
+                    showWarningMessage('No nearby item.');
+                    $("cur-loc").innerText = "Cannot find the location :( ";
+                }else{
+                    lat = array.geometry.location.lat;
+                    lng = array.geometry.location.lng;
+                    $("cur-loc").innerText = "Location: "+array.formatted_address;
+                }
+
 
 
                 loadNearbyItems()
@@ -39,6 +42,7 @@
             .catch(function (error) {
                 console.log(error);
                 showErrorMessage('Cannot load nearby items.');
+                $("cur-loc").innerText = "Cannot find the location :("
 
             });
 
@@ -57,10 +61,8 @@
                 if(!array || array.length == 0) {
                     $("cur-loc").innerText = "Cannot get your current location :("
                 }else{
-                    lat = array.geometry.location.lat;
-                    lng = array.geometry.location.lng;
+                    $("cur-loc").innerText = "Current Location: "+array[6].formatted_address;
                 }
-
 
                 loadNearbyItems()
 
@@ -84,7 +86,7 @@
         let welcomeMsg = document.getElementById("welcome-msg");
         welcomeMsg.innerText = 'Welcome, ' + user_fullname;
 
-        // $("cur-loc").innerText = 'Current Location: ' +
+        $("cur-loc").innerText = 'Current Location: ';
 
         initGeoLocation();
     }
@@ -154,7 +156,12 @@
         lng = position.coords.longitude;
 
 
-        loadNearbyItems();
+        // $("cur-loc").innerText = 'Current Location: ';
+
+        reverseGeo();
+
+
+        // loadNearbyItems();
     }
 
     function onLoadPositionFailed() {

@@ -66,8 +66,8 @@
         </video>
         <div class= text-left" style="left: 20%; top: 160px; position: absolute">
 
-          <h1 class="textShadow" style="font-size: 60px">EventBox</h1>
-          <h3 class="textShadow">Get the ticket, Enjoy the show</h3>
+          <h1 class="textShadow" style="font-size: 60px; font-family: 'Sen', sans-serif">EventBox</h1>
+          <h3 class="textShadow" style="font-family: 'Sen', sans-serif">Get the ticket, Enjoy the show</h3>
 <%--          <div style="margin: 20px auto;" >--%>
 <%--            <form class=" s-search real-search" action="/photoboards" method="GET" >--%>
 <%--              <button  class="btn btn-link btn-sm border-0 s-search-button" type="submit"><img src="icon/search.svg" height="16" width="16" class="s-search-icon" ></button>--%>
@@ -77,7 +77,7 @@
 <%--            </form>--%>
 <%--          </div>--%>
           <form class="input-group mb-3 mt-5" style="width: 370px" id="location-form">
-            <input required id="location-input" type="text" class="form-control" placeholder="Location (Los Angeles, CA)" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <input required id="location-input" type="text" class="form-control" placeholder="Search Location..." aria-label="Recipient's username" aria-describedby="button-addon2">
             <div class="input-group-append">
               <button class="btn btn-info" type="submit" id="button-addon2">Search</button>
             </div>
@@ -107,8 +107,8 @@
       </nav>
     </aside>
 
-    <p style="
-    padding: 20px; height: 68px;margin-left: 30%; margin-bottom: 0" id = "cur-loc"></p>
+    <h4 style="
+    padding: 20px; height: 68px;margin-left: 30%; margin-bottom: 0; font-family: 'Sen', sans-serif" id = "cur-loc"></h4>
     <ul id="item-list" style="margin-left: 30%">
       <li class="item">
         <img alt="item image" src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg"/>
