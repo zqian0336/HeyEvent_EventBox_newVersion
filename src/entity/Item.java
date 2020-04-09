@@ -19,6 +19,7 @@ public class Item {
     private String url;
     private double distance;
 
+
     /*
      * This is a builder pattern in Java.
      */
@@ -31,6 +32,7 @@ public class Item {
         this.imageUrl = builder.imageUrl;
         this.url = builder.url;
         this.distance = builder.distance;
+
 
     }
 

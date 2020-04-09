@@ -41,77 +41,7 @@ ul {
 
 }
 
-.search-line {
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    max-width: 1040px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
-    margin: 0px auto;
-    border-radius: 2px;
-    color: #333C4D;
-    display: flex;
-}
 
-.search1{
-    width: 20%;
-    height: auto;
-    min-height: 52px;
-}
-
-.s-search {
-    height: 40px;
-    display: flex;
-    border-radius: 24px;
-    background-color: #eee;
-    font-size: 14px;
-    border: 1px solid transparent;
-    position: relative;
-    transition: all .1s ease-in-out;
-}
-
-.s-search-input {
-    flex-grow: 1;
-    width: 100%;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 2px;
-    background: none;
-    border: none;
-    color: black;
-}
-
-.s-search-input:required {
-    box-shadow: none;
-}
-
-.s-search-button {
-    display: flex;
-    align-items: center;
-    box-shadow: none;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    text-align: inherit;
-
-}
-
-
-.s-search-icon {
-    padding-right: 14px;
-    padding-left: 14px;
-    box-sizing: content-box;
-    fill: black;
-    transition: fill .1s ease-in-out;
-}
-
-.s-search-button:hover > .s-search-icon {
-    transform: scale(1.2);
-}
-
-.s-search-in {
-    flex-grow: 1;
-    display: flex;
-}
 
 /*=========*/
 

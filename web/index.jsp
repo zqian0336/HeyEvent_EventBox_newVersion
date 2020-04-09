@@ -8,12 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>o(*≧▽≦)ツ @EventBox </title>
     <meta charset="UTF-8">
     <meta name="description" content="Item Recommendation">
     <meta name="author" content="Zhicheng Qian">
+
     <title>Item Recommendation Final</title>
 <%--    <link href="https://fonts.googleapis.com/css?family=Roboto|Sen&display=swap" rel="stylesheet">--%>
+    <link rel="icon" type="image/ico" href="icon/ticket.svg">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -27,13 +29,13 @@
       <div class = "container-fluid">
 
         <div class = "navbar-header">
-            <a class = "navbar-brand the-icon" >
-              <img class="d-inline-block align-top" src="icon/search.svg" width="30" height="30">
+            <a class = "navbar-brand the-icon" href="/search" style="color: cornflowerblue">
+              <img class="d-inline-block align-top" src="icon/ticket.svg" width="30" height="30">
               HeyEvent
             </a>
-            <a href="#">Home</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
+            <a href="#" style="color: #CE96FB; margin-left: 15px;">Home</a>
+            <a href="#" style="color: #CE96FB; margin-left: 10px">Contact</a>
+            <a href="#" style="color: #CE96FB; margin-left: 10px">About</a>
         </div>
         <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" ></span>
